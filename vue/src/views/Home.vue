@@ -3,10 +3,10 @@
     <section class="hero is-medium is-dark mb-6">
       <div class="hero-body has-text-centered">
         <p class="title mb-6">
-          Welcome to my final project
+          Welcome to my Honey and Nuts store
         </p>
         <p class="subtitle">
-          The best django vue project
+          Taste the best quality
         </p>
 
       </div>
@@ -60,7 +60,7 @@ mounted() {
   methods: {
     getLatestProducts(){
       axios
-      .get('/api/v1/latestproducts/')
+      .get('/api/v1/latest-products/')
       .then(response => {
           this.latestProducts = response.data
         })
