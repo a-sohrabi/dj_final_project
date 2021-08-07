@@ -14,8 +14,8 @@
             </div>
             <div class="navbar-menu" id="navbar-menu" v-bind:class="{'is-active': showMobileMenu}" >
                 <div class="navbar-end">
-                    <router-link to="/category1" class="navbar-item">category1</router-link>
-                    <router-link to="/category2" class="navbar-item">category2</router-link>
+                    <router-link to="/honey" class="navbar-item">Honey</router-link>
+                    <router-link to="/nuts" class="navbar-item">Nuts</router-link>
 
                     <div class="navbar-item">
                         <div class="buttons">
