@@ -1,6 +1,5 @@
 from rest_framework import serializers
 
-
 from .models import Category, Product
 
 
@@ -18,6 +17,7 @@ class ProductSerializer(serializers.ModelSerializer):
             'get_thumbnail',
         ]
 
+
 # class productserialzer1(serializers.ModelSerializer):
 #     class Meta:
 #         model = Product
@@ -26,12 +26,12 @@ class ProductSerializer(serializers.ModelSerializer):
 
 class CategorySerializer(serializers.ModelSerializer):
     products = ProductSerializer(many=True)
+
     class Meta:
         model = Category
-        fields = [
+        fields = (
             'id',
             'name',
             'get_absolute_url',
             'products',
-        ]
-
+        )
