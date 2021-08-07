@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 
 import Product from '../views/product.vue'
 import Category from '../views/category.vue'
+import Search from '../views/search.vue'
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
+    {
+    path: '/search',
+    name: 'Search',
+    component: Search
+  },
   {
     path: '/:category_slug/:product_slug/',
     name: 'Product',
@@ -28,6 +34,7 @@ const routes = [
     name: 'Category',
     component: Category
   }
+
 ]
 
 const router = createRouter({
