@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <section class="hero is-medium is-dark mb-6">
+    <section class="hero is-medium is-dark mb-6" style="background-color: #fbec51">
       <div class="hero-body has-text-centered">
         <p class="title mb-6">
           Welcome to my Honey and Nuts store
@@ -56,6 +56,8 @@ export default {
   },
 mounted() {
     this.getLatestProducts()
+
+    document.title = 'Home | Navan Nuts'
 },
   methods: {
     async getLatestProducts(){

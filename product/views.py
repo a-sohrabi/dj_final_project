@@ -1,4 +1,4 @@
-from django.http import Http404
+from django.http import Http404, JsonResponse
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -25,3 +25,38 @@ class ProductDetail(APIView):
         product = self.get_object(category_slug, product_slug)
         serializer = ProductSerializer(product)
         return Response(serializer.data)
+
+
+# def product_api(request):
+#     if request.method == 'GET':
+#         products = Product.objects.all()
+#         serial = ProductSerializer(products, many=True)
+#         return JsonResponse({
+#             'products': serial.data
+#         })
+#     elif request.method == 'POST':
+#         serial = ProductSerializer(data=request.POST)
+#         if serial.is_valid():
+#             serial.save()
+#             return JsonResponse(serial.data)
+#         else:
+#             return JsonResponse(serial.errors, status=400)
+
+
+from rest_framework import generics
+
+
+# class ProductListApiView(generics.ListCreateAPIView):
+#     serializer_class = ProductSerializer
+#     queryset = Product.objects.all()
+
+    # def get_serializer(self, *args, **kwargs):
+    #     if self.request.method == "POST":
+    #         return productserialzer1
+    #     return super().get_serializer(*args, **kwargs)
+
+#
+# class ProductDetailApi(generics.RetrieveUpdateDestroyAPIView):
+#     serializer_class = ProductSerializer
+#     queryset = Product.objects.all()
+
