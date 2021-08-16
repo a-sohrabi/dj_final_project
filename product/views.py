@@ -5,7 +5,7 @@ from rest_framework.views import APIView
 from rest_framework.decorators import api_view
 
 from .models import Product, Category
-from .serializer import ProductSerializer, CategorySerializer
+from .serializers import ProductSerializer, CategorySerializer
 
 
 class LatestProductsList(APIView):
