@@ -1,6 +1,6 @@
 <template>
     <div id="wrapper">
-        <nav class="navbar is-danger">
+        <nav class="navbar" style="background-color: #e64398">
             <div class="navbar-brand">
                 <router-link to="/" class="navbar-item">
                     <strong>Nuts & Honey Store</strong>
@@ -23,7 +23,7 @@
                                            name="query">
                                 </div>
                                 <div class="control">
-                                    <button class="button is-success">
+                                    <button class="button is-success" style="background-color: #a1c3d1">
                                         <span class="icon">
                                             <i class="fas fa-search"></i>
                                         </span>
@@ -72,7 +72,7 @@
             <router-view/>
         </section>
         <footer>
-            <p class="has-text-centered">Copyright (c) 2021</p>
+            <p class="has-text-centered" style="background-color: #e64398;position: absolute;width: 100%;bottom: 0">Copyright (c) 2021</p>
         </footer>
     </div>
 </template>

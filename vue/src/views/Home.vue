@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <section class="hero is-medium is-dark mb-6" style="background-color: #fbec51">
+    <section class="hero is-medium is-dark mb-6" style="background-color: #a1c3d1">
       <div class="hero-body has-text-centered">
         <p class="title mb-6">
           Welcome to my Honey and Nuts store
