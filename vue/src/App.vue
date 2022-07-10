@@ -1,6 +1,6 @@
 <template>
     <div id="wrapper">
-        <nav class="navbar" style="background-color: #e64398">
+        <nav class="navbar" style="background-color: #2C2C2C">
             <div class="navbar-brand">
                 <router-link to="/" class="navbar-item">
                     <strong>Nuts & Honey Store</strong>
@@ -72,13 +72,15 @@
             <router-view/>
         </section>
         <footer>
-            <p class="has-text-centered" style="background-color: #e64398;position: absolute;width: 100%;bottom: 0">Copyright (c) 2021</p>
+            <p class="has-text-centered" style="background-color: #2C2C2C;position: sticky;width: 100%;bottom: 0">
+                Copyright (c) 2021</p>
         </footer>
     </div>
 </template>
 
 <script>
     import axios from 'axios'
+
     export default {
         data() {
             return {
@@ -117,6 +119,7 @@
 
 <style lang="scss">
     @import '../node_modules/bulma';
+
 
     .lds-dual-ring {
         display: inline-block;

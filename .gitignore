@@ -2,3 +2,7 @@
 .idea/
 __pycache__/
 venv/
+media/
+migrations/
+db.sqlite3/
+
