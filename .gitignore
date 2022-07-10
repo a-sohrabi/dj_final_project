@@ -4,5 +4,5 @@ __pycache__/
 venv/
 media/
 migrations/
-db.sqlite3/
+db.sqlite3
 
