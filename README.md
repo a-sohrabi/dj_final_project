@@ -2,7 +2,7 @@
 A shopping website using Django, Django Rest Framework and Vue.js
 
 
-How to run the project
+#How to run the project
 
 ## Django setup
  Clone the Project
