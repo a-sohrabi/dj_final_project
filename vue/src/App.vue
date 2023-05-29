@@ -38,7 +38,7 @@
                 </div>
                 <div class="navbar-end">
                     <router-link to="/honey" class="navbar-item">Honey</router-link>
-                    <router-link to="/nuts" class="navbar-item">Nuts</router-link>
+                    <router-link to="/nut" class="navbar-item">Nuts</router-link>
 
                     <div class="navbar-item">
                         <div class="buttons">
